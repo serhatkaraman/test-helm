@@ -3,7 +3,7 @@ replicaCount: 1
 
 
 image:
-  repository: httpd
+  repository: busybox
   pullPolicy: IfNotPresent
   tag: "latest"
 
@@ -28,7 +28,7 @@ securityContext: {}
 
 service:
   type: ClusterIP
-  port: 80
+  port: 8080
 
 ingress:
   enabled: false
